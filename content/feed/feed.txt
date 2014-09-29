@@ -1,0 +1,15 @@
+Title: Sustainable pace
+
+----
+
+Shorttitle: RSS
+
+----
+
+Type: application/rss+xml
+
+----
+
+Description: Work. Rest. Connect. Be active. Take notice. Keep learning. Give.
+
+----
