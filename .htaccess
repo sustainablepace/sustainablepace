@@ -1,4 +1,17 @@
 # Kirby .htaccess
+SetEnvIf HOST "^sustainablepace.net" live_url
+SetEnvIf HOST "^sustainablepace.local" local_url
+Order Deny,Allow
+
+AuthType Basic
+AuthName "dev access"
+AuthUserFile /home/nosweat/dev.sustainablepace.net/.htpasswd
+Require valid-user
+
+Deny from all
+Allow from env=live_url
+Allow from env=local_url
+Satisfy any
 
 # rewrite rules
 <IfModule mod_rewrite.c>
