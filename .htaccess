@@ -5,7 +5,7 @@ Order Deny,Allow
 
 AuthType Basic
 AuthName "dev access"
-AuthUserFile /home/nosweat/dev.sustainablepace.net/.htpasswd
+AuthUserFile /var/www/virtual/nosweat/.htpasswd
 Require valid-user
 
 Deny from all
