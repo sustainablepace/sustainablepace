@@ -1,9 +1,0 @@
-Title: Sustainable pace
-----
-Author: Christoph Baudson
-----
-Description: Developing software at a sustainable pace
-----
-Keywords: agile, minimalism, happiness
-----
-Copyright: © 2008-(date: Year) Christoph Baudson
