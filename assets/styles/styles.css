@@ -237,25 +237,25 @@ footer {
 footer > p {
   margin-bottom: 0;
 }
-nav.menu {
+div.menu {
   background: url(low_contrast_linen.png);
   overflow:hidden;
   text-align:center;
   margin-bottom: 1em;
 }
-nav.menu > ul {
+div.menu > ul {
   max-width: 800px;
   margin: 0 auto;
 }
-nav.menu li {
+div.menu li {
   list-style: none;
   display: inline;
   float: left;
   width: 33.333333%;
 }
-nav.menu a {
+div.menu a {
   color: #ededed;
 }
-nav.menu a:hover {
+div.menu a:hover {
   color: #00acee;
 }

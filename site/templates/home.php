@@ -18,8 +18,6 @@
   }
 
 ?>
-<?php // Older / Newer auskommentiert. Nur See all posts ?>
-<!--
 <?php if( $siblings->pagination()->hasPages() ): ?>
 <nav class="pagination">
   <?php if( $siblings->pagination()->hasPrevPage() ): ?>
@@ -30,10 +28,5 @@
   <?php endif ?>
 </nav>
 <?php endif ?>
--->
-<?php 
-  $archives = $pages->find( 'archives ');
-?>
-<a href="<?php echo $archives->url() ?>"<?php echo $archives->type() ? ' type="' . $archives->type() . '"' : '' ?>>See all posts &raquo;</a></li>
 </section>
 <?php snippet('footer') ?>

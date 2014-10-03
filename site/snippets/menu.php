@@ -1,4 +1,4 @@
-<nav class="menu">
+<div class="menu">
   <ul>
     <?php
     $menuPages = array(
@@ -19,4 +19,4 @@
     }
     ?>
   </ul>
-</nav>
+</div>

@@ -22,13 +22,5 @@
   <header>
     <h1><a href="<?php echo url() ?>"><?php echo html( $site->title() ) ?></a></h1>
   </header>
-    <p class="subtitle">Work&nbsp;and&nbsp;Rest.&nbsp;Connect, be&nbsp;active, take&nbsp;notice, keep&nbsp;learning, give.</p>
-  <nav>
-    <ul>
-      <li><a href="#">Start here!</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Archives</a></li>
-      <li><a href="#">Experiments</a></li>
-    </ul>
-  </nav>
 
+    <p class="subtitle">Work.&nbsp;Rest.&nbsp;Connect. Be&nbsp;active. Take&nbsp;notice.&nbsp;Keep&nbsp;learning.&nbsp;Give.</p>
