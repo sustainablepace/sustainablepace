@@ -22,13 +22,15 @@
   <header>
     <h1><a href="<?php echo url() ?>"><?php echo html( $site->title() ) ?></a></h1>
   </header>
-    <p class="subtitle">Work&nbsp;and&nbsp;Rest.&nbsp;Connect, be&nbsp;active, take&nbsp;notice, keep&nbsp;learning, give.</p>
-  <nav>
+    <!--<p class="subtitle">Work&nbsp;and&nbsp;Rest.&nbsp;Connect, be&nbsp;active, take&nbsp;notice, keep&nbsp;learning, give.</p>-->
+
+  <nav class="menu">
     <ul>
-      <li><a href="#">Start here!</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Archives</a></li>
+      <li><a href="#">What is Sustainable Pace?</a></li>
       <li><a href="#">Experiments</a></li>
+      <li><a href="#">Book reviews</a></li>
+      <li><a href="#">All posts</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 

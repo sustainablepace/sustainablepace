@@ -4,7 +4,7 @@
   function blogPostPreview( $sibling, $withDate = true ) {
     $date = $withDate ? '<p class="date">' . $sibling->date( 'F jS, Y' ) . '</p>' : '';
     $title = '<h1><a href="' . $sibling->url() . '">' . html($sibling->title()) . '</a></h1>';
-    $text = '<p>' . excerpt( $sibling->text(), 300 ) . '</p>';
+    $text = '<p>' . excerpt( $sibling->text(), 700 ) . '</p>';
     $more = '<p class="more"><a href="' . $sibling->url() . '">More...</a></p>';
     return '<article>' . $date . $title . $text . $more . '</article>';
   }
