@@ -1,10 +1,16 @@
+<ul>
 <?php 
-  $feed = $pages->find( 'feed' );
-  $title = $feed->shorttitle();
-	if( !$title ) {
-    $title = $feed->title();
-	}
+  foreach( $pages->find( 'author', 'privacy', 'feed' ) as $item ) {
+    $title = $item->shorttitle();
+    if( !$title ) {
+      $title = $item->title();
+    }
 ?>
-<a href="<?= $feed->url() ?>"<?= $feed->type() ? ' type="' . $feed->type() . '"' : '' ?>
+<li>
+  <a href="<?= $item->url() ?>"<?= $item->type() ? ' type="' . $item->type() . '"' : '' ?>
 ><?= html( $title ) ?></a>
-
+</li>
+<?php
+  }
+?>
+</ul>

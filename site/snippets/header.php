@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
   <meta charset="utf-8" />
@@ -22,15 +21,22 @@
   <header>
     <h1><a href="<?php echo url() ?>"><?php echo html( $site->title() ) ?></a></h1>
   </header>
-    <!--<p class="subtitle">Work&nbsp;and&nbsp;Rest.&nbsp;Connect, be&nbsp;active, take&nbsp;notice, keep&nbsp;learning, give.</p>-->
-
   <nav class="menu">
     <ul>
-      <li><a href="#">What is Sustainable Pace?</a></li>
-      <li><a href="#">Experiments</a></li>
-      <li><a href="#">Book reviews</a></li>
-      <li><a href="#">All posts</a></li>
-      <li><a href="#">Contact</a></li>
+<?php 
+  foreach( $pages->find( 'what-is-sustainable-pace', 'home', 'archives', 'experiments' ) as $item ) {
+    $title = $item->shorttitle();
+    if( !$title ) {
+      $title = $item->title();
+    }
+?>
+      <li>
+        <a href="<?= $item->url() ?>"<?= $item->type() ? ' type="' . $item->type() . '"' : '' ?>
+><?= html( $title ) ?></a>
+      </li>
+<?php
+  }
+?>
     </ul>
   </nav>
 
