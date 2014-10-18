@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
   <meta charset="utf-8" />
@@ -22,5 +21,22 @@
   <header>
     <h1><a href="<?php echo url() ?>"><?php echo html( $site->title() ) ?></a></h1>
   </header>
+  <nav class="menu">
+    <ul>
+<?php 
+  foreach( $pages->find( 'what-is-sustainable-pace', 'home', 'archives', 'experiments' ) as $item ) {
+    $title = $item->shorttitle();
+    if( !$title ) {
+      $title = $item->title();
+    }
+?>
+      <li>
+        <a href="<?= $item->url() ?>"<?= $item->type() ? ' type="' . $item->type() . '"' : '' ?>
+><?= html( $title ) ?></a>
+      </li>
+<?php
+  }
+?>
+    </ul>
+  </nav>
 
-    <p class="subtitle">Work.&nbsp;Rest.&nbsp;Connect. Be&nbsp;active. Take&nbsp;notice.&nbsp;Keep&nbsp;learning.&nbsp;Give.</p>

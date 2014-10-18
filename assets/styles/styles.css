@@ -19,16 +19,17 @@ a {
 }
 
 @media (orientation:landscape) and (min-device-height:768px) and (max-device-height:1024px), screen and (min-width: 800px) {
-  header {
+  body header {
+    border-top: 2px solid #121212;
     margin-top: 2em;
-    padding-top: 1em;
+    padding-top: 0;
   }
   header > h1 {
     font-size: 5.5em;
     padding: .15em .5em .3em;
     box-shadow: 0 2px 10px #a14800;
     background: #00acee url(../images/straws_t.png);
-    border-bottom: 1px solid #a14800;
+    margin-bottom: 0;
   }
   p.subtitle {
     font-size: 1.7em;
@@ -58,12 +59,33 @@ a {
   h2 {
     font-size: 1.4em;
   }
+  nav.menu {
+    margin-bottom: 1em;
+  }
+  nav.menu li {
+    display: inline;
+    float: left;
+    width: 25%;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+  footer ul {
+    width: 50%;
+    margin: 0 auto;
+  }
+  footer li {
+    display: inline;
+    float: left;
+    width: 33.333333%;
+  }
 }
 @media screen and (max-width: 799px) {
   header > h1 {
     font-size: 2em;
     padding: 1em 0.5em 0.2em;
     background: #00acee;
+    margin-bottom: 1em;
   }
   p.subtitle {
     font-size: 1em;
@@ -76,7 +98,7 @@ a {
     line-height: 1.7em;
   }
   section.content {  
-    margin: .5em auto 0;
+    margin: 0 auto;
     padding: 2em .5em 2em 1em ;
   }
   h1 {
@@ -84,6 +106,26 @@ a {
   }
   h2 {
     font-size: 1.2em;
+  }
+  nav.menu {
+    margin-bottom: 0;
+  }
+  nav.menu li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+  footer li {
+    font-size: 1em;
+  }
+  footer li {
+    display: block;
+    float: none;
+    width: 100%;
+    padding: 0.5em 0;
   }
 }
 
@@ -96,7 +138,6 @@ header {
 }
 header > h1 {
   line-height: .8em;
-  margin-bottom: 0.2em;
 }
 header, h1, h2 {
   font-family: "Georgia",times,serif;
@@ -115,6 +156,33 @@ p.subtitle {
   margin: 0 auto;
   text-align: center;
 }
+
+
+/* -------------
+   navigation
+---------------- */
+nav.menu {
+  background: url(low_contrast_linen.png);
+  overflow:hidden;
+  text-align:center;
+  border-bottom: 2px solid #121212;
+  border-top: 2px solid #121212;
+}
+nav.menu > ul {
+  max-width: 800px;
+  margin: 0 auto;
+}
+nav.menu li {
+  list-style: none;
+}
+nav.menu a {
+  border: 0;
+  color:#fff;
+} 
+nav.menu a:hover {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+} 
 
 /* -------------
    content
@@ -228,7 +296,6 @@ div#disqus_thread {
    footer 
 ---------------*/
 footer {
-  font-size: 0.7em;
   text-align:center;
   background: url(low_contrast_linen.png);
   color: #ededed;
@@ -237,25 +304,11 @@ footer {
 footer > p {
   margin-bottom: 0;
 }
-div.menu {
-  background: url(low_contrast_linen.png);
-  overflow:hidden;
-  text-align:center;
-  margin-bottom: 1em;
-}
-div.menu > ul {
-  max-width: 800px;
-  margin: 0 auto;
-}
-div.menu li {
-  list-style: none;
-  display: inline;
-  float: left;
-  width: 33.333333%;
-}
-div.menu a {
-  color: #ededed;
-}
-div.menu a:hover {
+footer a, 
+footer a:visited {
+  border: 0;
+  color:#fff;
+} 
+footer a:hover {
   color: #00acee;
 }
