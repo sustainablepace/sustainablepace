@@ -13,7 +13,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   // Set to the same value as the web property used on the site
-  var gaProperty = 'UA-32666787-1';
+  var gaProperty = 'UA-53518078-1';
 
   ga('create', gaProperty, 'auto');
   ga('set', 'anonymizeIp', true);
