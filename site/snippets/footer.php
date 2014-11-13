@@ -6,7 +6,6 @@
     </p>
     <?php echo kirbytext($site->copyright()) ?>
   </footer>
-<!--
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -14,9 +13,9 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-53518078-1', 'auto');
+  ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
 
 </script>
--->
 </body>
 </html>
