@@ -11,9 +11,23 @@
   }
 
 ?>
+<?php if( $siblings->pagination()->hasPages() ): ?>
+<p class="pagination">
+ <?php if( $siblings->pagination()->hasPrevPage() ): ?>
+ <a class="next" href="<?php echo $siblings->pagination()->prevPageURL() ?>">&lsaquo;&nbsp;newer&nbsp;posts</a>
+ <?php endif ?>
+ <?php if( $siblings->pagination()->hasNextPage() ): ?>
+ <a class="prev" href="<?php echo $siblings->pagination()->nextPageURL() ?>">older&nbsp;posts&nbsp;&rsaquo;</a>
+ <?php endif ?>
+</p>
+<?php endif ?>
+
+<!--
 <?php 
   $archives = $pages->find( 'archives' );
 ?>
-<a href="<?php echo $archives->url() ?>"<?php echo $archives->type() ? ' type="' . $archives->type() . '"' : '' ?>>See all posts &raquo;</a></li>
+<a href="<?php echo $archives->url() ?>"<?php echo $archives->type() ? ' type="' . $archives->type() . '"' : '' ?>>See all posts &raquo;</a>
+-->
+
 </section>
 <?php snippet('footer') ?>
