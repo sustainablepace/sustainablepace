@@ -1,5 +1,6 @@
 # Kirby .htaccess
 SetEnvIf HOST "^sustainablepace.net" live_url
+SetEnvIf HOST "^www.sustainablepace.net" live_url_www
 SetEnvIf HOST "^sustainablepace.local" local_url
 Order Deny,Allow
 
@@ -10,6 +11,7 @@ Require valid-user
 
 Deny from all
 Allow from env=live_url
+Allow from env=live_url_www
 Allow from env=local_url
 Satisfy any
 
