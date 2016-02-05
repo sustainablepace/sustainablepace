@@ -1,6 +1,8 @@
 .DS_Store
+.idea
 panel/
 site/panel
 docs
+content
 site/config/keys.php
 *~
