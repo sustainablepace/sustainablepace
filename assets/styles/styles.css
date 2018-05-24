@@ -76,7 +76,7 @@ a {
   footer li {
     display: inline;
     float: left;
-    width: 33.333333%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 799px) {
