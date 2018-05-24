@@ -1,6 +1,6 @@
 <ul>
 <?php 
-  foreach( $pages->find( 'author', 'privacy', 'feed' ) as $item ) {
+  foreach( $pages->find( 'author', 'privacy' ) as $item ) {
     $title = $item->shorttitle();
     if( !$title ) {
       $title = $item->title();

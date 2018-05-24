@@ -9,7 +9,6 @@
   <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
   <meta name="robots" content="index, follow" />
   <?php echo css('assets/styles/styles.css') ?>
-  <link rel="alternate" type="application/rss+xml" href="/feed" title="RSS feed" />
   <link rel="icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
   <link rel="shortcut icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
   <link rel="apple-touch-icon" href="<?php echo url('assets/images/apple-touch-icon-iphone.png') ?>" /> 
