@@ -24,7 +24,7 @@
   <nav class="menu">
     <ul>
 <?php 
-  foreach( $pages->find( 'what-is-sustainable-pace', 'home', 'archives', 'experiments', 'appreciation' ) as $item ) {
+  foreach( $pages->find( 'what-is-sustainable-pace', 'archives', 'experiments', 'appreciation' ) as $item ) {
     $title = $item->shorttitle();
     if( !$title ) {
       $title = $item->title();
