@@ -129,4 +129,9 @@ In sustainablepace-content auf Master wechseln, pullen
 In sustainablepace-content auf Master wechseln, committen und pushen
 
 
+## Benutzte Resourcen
 
+* https://www.toptal.com/designers/subtlepatterns/
+* https://colourco.de/
+* https://www.e-recht24.de/impressum-generator.html
+* https://www.iconfinder.com/iconsets/social-flat-rounded-rects
