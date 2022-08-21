@@ -19,7 +19,7 @@
       <?php endforeach; ?>
     <?php else: ?>
       <p>
-        <em>I will add information on appreciation soon.</em>
+        <em>More nostalgia to come...</em>
       <p>
     <?php endif; ?>
     </dl>
