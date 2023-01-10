@@ -512,7 +512,7 @@ class Markdown_Parser {
   function doHardBreaks($text) {
     if(c::get('markdown.breaks')) {
       # Do hard breaks:
-      return preg_replace_callback('/ {2,}\n|\n{1}/', array(&$this, '_doHardBreaks_callback'), $text);
+      return preg_replace_callback('/ {2,}\n|\n[1]/', array(&$this, '_doHardBreaks_callback'), $text);
     } else {
       return preg_replace_callback('/ {2,}\n/', 
         array(&$this, '_doHardBreaks_callback'), $text);
@@ -1437,7 +1437,7 @@ class Markdown_Parser {
   #
     switch ($token[0]) {
       case "\\":
-        return $this->hashPart("&#". ord($token{1}). ";");
+        return $this->hashPart("&#". ord($token[1]). ";");
       case "`":
         # Search for end marker in remaining text.
         if (preg_match('/^(.*?[^`])'.preg_quote($token).'(?!`)(.*)$/sm', 
