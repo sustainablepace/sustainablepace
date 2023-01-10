@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
+  <title>Sustainable Pace - <?php echo html($page->title()) ?></title>
   <meta name="google-site-verification" content="b-zR3SGNxuM0T76rpIRZY8Aw6IWQ-184Se6UzX7ns70" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
   <meta charset="utf-8" />
